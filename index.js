@@ -11,8 +11,8 @@ let submitData = (name, email) => {
       })
     })
      .then(Response => Response.json())
-     .then((newID) => {
-         document.body.innerHTML = newID['id']
+     .then((Response) => {
+         document.body.innerHTML = Response['id']
         })
         
         .catch((error) => {
